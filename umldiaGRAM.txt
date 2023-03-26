@@ -1,0 +1,24 @@
+          +--------+
+          |   IDB  |
+          +--------+
+          |        |
+          |connect |
+          |select  |
+          |insert  |
+          |update  |
+          |delete  |
+          +--------+
+               ^
+               |
+               |
++--------------------------+
+|          MySQL           |
++--------------------------+
+|- connection: mysqli      |
++--------------------------+
+|+ connect() : IDB         |
+|+ select(string) : array  |
+|+ insert(string, array)   : bool |
+|+ update(string, int, array) : bool |
+|+ delete(string, int) : bool |
++--------------------------+
